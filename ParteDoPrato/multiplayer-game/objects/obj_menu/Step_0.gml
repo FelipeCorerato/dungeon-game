@@ -18,10 +18,15 @@ if (keyboard_check_pressed(vk_enter)) {
 		
 		case 1:
 			// join a game
-			global.name = get_string("Enter the server IP you want to join: ","");
-			room_goto_next();
-			break;
+			global.ip = get_string("Enter the server IP you want to join","");			
+			global.socket = network_create_socket(network_socket_tcp);
+			global.buffer = buffer_create(16384, buffer_grow, 1);
+			global.connect = network_connect(global.socket, global.ip, PORT);
+			SendName(global.name);
 			
+			room_goto_next();
+		break;
+		
 		case 2: 
 			// 
 			game_end();

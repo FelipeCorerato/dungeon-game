@@ -37,6 +37,8 @@ if (server == event_id) {
 		
 		ds_list_delete(sockets, ds_list_find_index(sockets, sock));
 		ds_map_delete(clients, sock);
+		
+		SendRemoteEntity(sock, CMD_DESTROY, player.id, player.id)
 	}
 } else if (event_id != global.socket) {
 	var sock = async_load[? "id"];
