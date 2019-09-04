@@ -78,7 +78,7 @@ if (server == event_id) {
 						HandleSprites(character);
 					}
 				
-					ds_list_delete(ava_characters, character);
+					ds_list_delete(ava_characters, ds_list_find_index(ava_characters, character));
 				}		
 			}
 		break;

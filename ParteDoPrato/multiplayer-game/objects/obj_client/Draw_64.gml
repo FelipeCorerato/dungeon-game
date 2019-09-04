@@ -5,7 +5,10 @@ if (!playing) {
 	draw_set_color(c_gray);
 	draw_rectangle(0, 0, room_width, room_height, false);
 	
+	
 	// Draw character select menu
+	draw_set_color(c_white);
+	
 	draw_text(room_width/2, 50, "Character Select");
 	
 	var sp = spr_person;
@@ -35,3 +38,5 @@ if (!playing) {
 		}
 	}
 }
+
+draw_set_halign(fa_left)
