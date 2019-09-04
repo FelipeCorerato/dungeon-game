@@ -18,6 +18,7 @@ if (keyboard_check_pressed(vk_enter)) {
 		
 		case 1:
 			// join a game
+			global.name = get_string("Enter the server IP you want to join: ","");
 			room_goto_next();
 			break;
 			

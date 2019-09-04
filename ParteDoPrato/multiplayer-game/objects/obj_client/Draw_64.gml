@@ -1,6 +1,3 @@
-draw_set_font(fnt_comic);
-draw_set_halign(fa_center);
-
 if (!playing) {
 	draw_set_color(c_gray);
 	draw_rectangle(0, 0, room_width, room_height, false);
@@ -35,8 +32,6 @@ if (!playing) {
 		draw_sprite_ext(sp, 0, 100+256*i, 200, 2, 2, 0, c_white, 1);
 		if (i == char) {
 			draw_sprite_ext(spr_indicator, 0, 100+256*i, 200, 2, 2, 0, c_white, 1);
-		}
+		}				
 	}
 }
-
-draw_set_halign(fa_left);
