@@ -28,4 +28,4 @@ if (playing) {
 	}
 }
 
-char = clamp(char, 0, CHAR_KNIGHT)
+char = clamp(char, 0, CHAR_ROGUE)

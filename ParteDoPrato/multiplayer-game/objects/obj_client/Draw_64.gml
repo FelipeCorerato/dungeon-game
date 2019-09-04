@@ -11,32 +11,32 @@ if (!playing) {
 	
 	draw_text(room_width/2, 50, "Character Select");
 	
-	var sp = spr_person;
+	var sp = spr_char_1_down;
 	
-	for (var i = 0; i <= CHAR_KNIGHT; i++) {	
+	for (var i = 0; i <= CHAR_ROGUE; i++) {	
 		switch (i) {
 			case CHAR_ROGUE:
-				sp = spr_person;
+				sp = spr_char_1_face;
 			break;
 	
 			case CHAR_BRUISER:
-				sp = spr_person;
+				sp = spr_char_2_face;
 			break;
 	
 			case CHAR_KNIGHT:
-				sp = spr_person;
+				sp = spr_char_1_face;
 			break;
 	
 			case CHAR_WARRIOR:
-				sp = spr_person
+				sp = spr_char_2_face;
 			break;
 		}
 		
-		draw_sprite_ext(sp, 0, 100+64*i, 200, 4, 4, 0, c_white, 1);
+		draw_sprite_ext(sp, 0, 100+256*i, 200, 2, 2, 0, c_white, 1);
 		if (i == char) {
-			draw_sprite_ext(spr_indicator, 0, 100+64*i, 200, 2, 2, 0, c_white, 1);
+			draw_sprite_ext(spr_indicator, 0, 100+256*i, 200, 2, 2, 0, c_white, 1);
 		}
 	}
 }
 
-draw_set_halign(fa_left)
+draw_set_halign(fa_left);
