@@ -12,6 +12,8 @@ walking_speed = 4;
 hspd = 0;
 vspd = 0;
 
+//last_dir = spr_down;
+
 name = "Unknown";
 
 if (instance_exists(obj_server)) {
