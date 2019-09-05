@@ -23,7 +23,7 @@ if (keyboard_check_pressed(vk_enter)) {
 		case 1:
 			// join a game
 			
-			//global.ip = get_string("Enter the server IP you want to join","");			
+			global.ip = get_string("Digite o IP que deseja entrar", "");			
 			//global.socket = network_create_socket(network_socket_tcp);
 			//global.buffer = buffer_create(16384, buffer_grow, 1);
 			//global.connect = network_connect(global.socket, global.ip, PORT);			
