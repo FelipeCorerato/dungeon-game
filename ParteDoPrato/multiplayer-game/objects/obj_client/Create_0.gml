@@ -2,10 +2,8 @@ socket = network_create_socket(network_socket_tcp);
 global.socket = socket;
 
 buffer = buffer_create(16384, buffer_grow, 1);
-//buffer = global.buffer;
 
 connect = network_connect(socket, global.ip, PORT);
-//connect = global.connect;
 
 if(connect < 0){
 	show_message("Can't Reach Server");
