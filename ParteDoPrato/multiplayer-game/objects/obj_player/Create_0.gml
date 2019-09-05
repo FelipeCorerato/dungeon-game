@@ -12,7 +12,7 @@ walking_speed = 4;
 hspd = 0;
 vspd = 0;
 
-name = "Prato";
+name = "Unknown";
 
 if (instance_exists(obj_server)) {
 	visible = false;
