@@ -27,19 +27,25 @@ if (server == event_id) {
 	}
 	
 	// disconnect
-	if (type == network_type_disconnect) {
+	
+	if (type == network_type_disconnect)
+	{
 		var player = clients[? sock];
-		if (instance_exists(player)) {
-			with (player) {
-				instance_destroy();
+		if (instance_exists(player)) 
+		{
+			with (player) 
+			{
+				//SendRemoteEntity(sock, CMD_DESTROY, player.id, player.id)
+				instance_destroy();				
 			}
 		}
 		
 		ds_list_delete(sockets, ds_list_find_index(sockets, sock));
 		ds_map_delete(clients, sock);
-		
-		SendRemoteEntity(sock, CMD_DESTROY, player.id, player.id)
+				
 	}
+	
+	
 } else if (event_id != global.socket) {
 	var sock = async_load[? "id"];
 	var buff = async_load[? "buffer"];
@@ -58,12 +64,13 @@ if (server == event_id) {
 			}
 		break;
 		
-		case PACKET_NAME:
+		case PACKET_NAME:		
 			player.name = buffer_read(buff, buffer_string);
+			
 			for(var i = 0; i < ds_list_size(sockets); i++){
 				var so = ds_list_find_value(sockets, i);
 				SendRemoteEntity(so, CMD_NAME, player.id, player.name);
-			}
+			}			
 		break;
 		
 		case PACKET_CHARACTER:
