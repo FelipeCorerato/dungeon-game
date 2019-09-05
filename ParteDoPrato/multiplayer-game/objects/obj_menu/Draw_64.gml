@@ -1,4 +1,4 @@
-draw_set_font(fnt_comic);
+draw_set_font(fnt_consolas);
 
 draw_set_halign(fa_center);
 

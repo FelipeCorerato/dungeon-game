@@ -13,7 +13,6 @@ if (keyboard_check_pressed(vk_enter)) {
 		case 0:
 			// create a game
 			instance_create_layer(0, 0, "instances", obj_server);
-			
 			//global.socket = network_create_socket(network_socket_tcp);
 			//global.buffer = buffer_create(16384, buffer_grow, 1);									
 			//global.connect = network_connect(global.socket, "127.0.0.1", PORT);
@@ -33,8 +32,8 @@ if (keyboard_check_pressed(vk_enter)) {
 		break;
 		
 		case 2: 
-			// 
+			// end game
 			game_end();
-			break;
+		break;
 	}
 }

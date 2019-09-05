@@ -255,6 +255,14 @@
             }
         },
         {
+            "Key": "365d2c4a-85b7-4b8f-ab16-ef355b77489b",
+            "Value": {
+                "id": "a73d7968-b227-4d43-a941-b83e058dc187",
+                "resourcePath": "fonts\\fnt_consolas\\fnt_consolas.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "3b8a3498-2617-43e9-94d0-f1fffe94d951",
             "Value": {
                 "id": "b97bed74-114c-4f5c-a0ae-2dfffb095d5a",
@@ -583,6 +591,14 @@
             }
         },
         {
+            "Key": "ad4ee10d-f06c-4fb9-9636-23da19e9c908",
+            "Value": {
+                "id": "ad174ddc-4d49-4486-9496-d70b86ca21d5",
+                "resourcePath": "sprites\\spr_char_3_down_w\\spr_char_3_down_w.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "b04d1f66-193a-4836-b79f-806bcd50be16",
             "Value": {
                 "id": "e11126dd-b176-4975-8265-40e476a2442a",
@@ -703,6 +719,22 @@
             }
         },
         {
+            "Key": "d7a3ebe0-8af6-4c7e-8219-aa41e1ebce78",
+            "Value": {
+                "id": "f0803554-0733-4fa7-8043-adbdf6ff6162",
+                "resourcePath": "views\\d7a3ebe0-8af6-4c7e-8219-aa41e1ebce78.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "d9c6fb6f-2c13-4033-8df1-00c7d777d498",
+            "Value": {
+                "id": "20bfd491-b6e0-4e4d-8969-283663a7e5ee",
+                "resourcePath": "sprites\\spr_char_3_up_w\\spr_char_3_up_w.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "e1135ddf-c42d-4526-a85b-9219ce6ee780",
             "Value": {
                 "id": "582d5ada-7584-4261-bba9-ea706f3ec520",
@@ -724,6 +756,14 @@
                 "id": "e3dcbd27-f787-4e07-9a40-aeb6453ca3e8",
                 "resourcePath": "sprites\\spr_char_1_right_w\\spr_char_1_right_w.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "e8707a31-4b28-4e80-8e4f-c85823ebb30e",
+            "Value": {
+                "id": "1560e7d3-3fd3-4d77-9a4a-c234a7a159d3",
+                "resourcePath": "views\\e8707a31-4b28-4e80-8e4f-c85823ebb30e.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
