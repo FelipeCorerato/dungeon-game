@@ -13,20 +13,20 @@ if (!playing) {
 	
 	for (var i = 0; i <= CHAR_ROGUE; i++) {	
 		switch (i) {
-			case CHAR_ROGUE:
-				sp = spr_char_1_face;
-			break;
-	
-			case CHAR_BRUISER:
-				sp = spr_char_2_face;
-			break;
-	
 			case CHAR_KNIGHT:
 				sp = spr_char_1_face;
 			break;
-	
-			case CHAR_WARRIOR:
+			
+			case CHAR_BRUISER:
 				sp = spr_char_2_face;
+			break;
+			
+			case CHAR_WARRIOR:
+				sp = spr_char_3_face;
+			break;
+			
+			case CHAR_ROGUE:
+				sp = spr_char_4_face;
 			break;
 		}
 		
