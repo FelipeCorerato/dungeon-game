@@ -9,6 +9,7 @@ keys[KEY_UP] = false;
 keys[KEY_DOWN] = false;
 
 walking_speed = 4;
+collision_speed = walking_speed + 2;
 hspd = 0;
 vspd = 0;
 
